@@ -8,7 +8,7 @@ npm install dictionary-api-client
 ```
 Note: If you are using Node.js, ensure your project supports ES modules.
 
-### ✨ Features
+### 📘 Features
 1. Lookup word definitions using a public dictionary API
 2. Automatically encodes words with spaces or special characters
 3. Clean success / failure response contract

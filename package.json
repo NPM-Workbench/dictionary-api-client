@@ -2,7 +2,7 @@
   "name": "dictionary-api-client",
   "description": "A lightweight JavaScript & TypeScript client for the free Dictionary API (dictionaryapi.dev), built with native fetch",
   "type": "module",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -20,5 +20,13 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NPM-Workbench/dictionary-api-client"
+  },
+  "homepage": "https://github.com/NPM-Workbench/dictionary-api-client",
+  "bugs": {
+    "url": "https://github.com/NPM-Workbench/dictionary-api-client/issues"
   }
 }

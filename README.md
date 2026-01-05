@@ -1,4 +1,7 @@
 ![banner](https://github.com/user-attachments/assets/9499749f-27ce-4421-a2de-8954d248fa15)
+![npm](https://img.shields.io/npm/v/dictionary-api-client)
+![downloads](https://img.shields.io/npm/dw/dictionary-api-client)
+![license](https://img.shields.io/npm/l/dictionary-api-client)
 # Dictionary API Client
 A minimal, fetch-based JavaScript & TypeScript client for the free [Dictionary API](https://dictionaryapi.dev/) that uses native fetch, works in Node.js (18+) and modern browsers and supports javascript and typescript.
 

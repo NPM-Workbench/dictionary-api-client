@@ -1,5 +1,5 @@
 ![banner](https://github.com/user-attachments/assets/9499749f-27ce-4421-a2de-8954d248fa15)
-# 🌍 Dictionary API Client
+# Dictionary API Client
 A minimal, fetch-based JavaScript & TypeScript client for the free [Dictionary API](https://dictionaryapi.dev/) that uses native fetch, works in Node.js (18+) and modern browsers and supports javascript and typescript.
 
 ### 📦 Installation
@@ -13,7 +13,7 @@ Note: If you are using Node.js, ensure your project supports ES modules.
 2. Automatically encodes words with spaces or special characters
 3. Clean success / failure response contract
 
-### Example Usage
+### 🔤 Example Usage
 ```javascript
 import { getDefinitionFor } from "dictionary-api-client";
 const res = await getDefinitionFor({ word: "white" });

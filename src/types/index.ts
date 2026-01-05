@@ -1,0 +1,9 @@
+export type TAPICode = "api-ok" | "api-fail";
+export type TDictionaryInput = { word: string; lang?: string };
+export type TDictionaryOk = Record<string, any>[];
+export type TDictionaryFail = Record<string, any>;
+export type TDictionaryRes = {
+  code: TAPICode,
+  message: string,
+  payload: TDictionaryOk | TDictionaryFail | null,
+};

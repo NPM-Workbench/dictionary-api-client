@@ -74,5 +74,30 @@ console.log(res);
 }
 ```
 
+### 📗 Test Coverage
+
+```
+PASS src/get-definition-for/test/index.test.ts
+  getDefinitionFor
+    ✓ throws when global fetch is unavailable
+    ✓ returns api-ok and payload when response ok
+    ✓ returns api-fail when response.ok is false
+    ✓ returns api-fail when fetch throws
+    ✓ targets the dictionary api root url
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+```
+
+```
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |
+ index.ts |     100 |      100 |     100 |     100 |
+----------|---------|----------|---------|---------|-------------------
+```
+
 ### Support
 Like this project? Support it with a github star, it would mean a lot to me! Cheers and Happy Coding.

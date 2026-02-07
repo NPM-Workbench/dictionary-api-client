@@ -1,18 +1,25 @@
 /* app imports */
-import { TDictionaryInput, TDictionaryRes, TDictionaryFail } from "../types/index.js";
+import {
+  TDictionaryInput,
+  TDictionaryRes,
+  TDictionaryFail,
+} from '../types/index.js';
 
 /* types */
 type TInput = TDictionaryInput;
 type TOutput = TDictionaryRes;
 
 /* module */
-async function getDefinitionFor({word, lang = "en"}: TInput): Promise<TOutput> {
+async function getDefinitionFor({
+  word,
+  lang = 'en',
+}: TInput): Promise<TOutput> {
   /* no fetch */
-  if (typeof fetch !== "function") {
-    throw new Error("[Bad]: Global Fetch Not Available");
+  if (typeof fetch !== 'function') {
+    throw new Error('[Bad]: Global Fetch Not Available');
   } else {
     /* setup */
-    const API_ROOT = "https://api.dictionaryapi.dev";
+    const API_ROOT = 'https://api.dictionaryapi.dev';
     const encodedWord = encodeURIComponent(word.trim());
     const API_URL = `${API_ROOT}/api/v2/entries/${lang}/${encodedWord}`;
 
@@ -22,21 +29,21 @@ async function getDefinitionFor({word, lang = "en"}: TInput): Promise<TOutput> {
       const definition = await response.json();
 
       if (!response.ok) {
-        throw new Error("[Bad]: Dictionary API Error", {cause: definition});
+        throw new Error('[Bad]: Dictionary API Error', { cause: definition });
       } else {
         /* end */
         return {
-          code: "api-ok",
-          message: "No error encountered",
-          payload: definition
-        }
+          code: 'api-ok',
+          message: 'No error encountered',
+          payload: definition,
+        };
       }
     } catch (error) {
       console.log(error);
       return {
-        code: "api-fail",
-        message: "Not Found",
-        payload: (error as Error).cause as TDictionaryFail
+        code: 'api-fail',
+        message: 'Not Found',
+        payload: (error as Error).cause as TDictionaryFail,
       };
     }
   }
